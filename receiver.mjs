@@ -48,7 +48,7 @@ function render(state) {
   } else notice('Play on TV', 'Choose Quick Quiz on your phone');
 }
 
-notice('Ready for a round?', 'Open Game Hub on your phone');
+notice('Ready for a round?', 'Open Huddle on your phone');
 if (new URLSearchParams(location.search).has('preview')) {
   const sample = new URLSearchParams(location.search).get('preview');
   render({screen: sample === 'quiz' || sample === 'reveal' ? 'quiz' : 'library', focus: 0, players: 2,
